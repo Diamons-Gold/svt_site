@@ -141,6 +141,38 @@ nav {
 /* Body */
 
 #body {
-    margin-top: -20px;
     padding-bottom: 25px;
 }
+
+/* texte */
+
+.txt {
+    position: relative;
+    margin-top: -35px;
+}
+
+/* sun */
+
+#sun {
+    position: fixed;
+    width: 15%;
+    z-index: 100;
+    left: 5%;
+    top: 7.5%;
+}
+
+#sun {
+    -webkit-animation: spin 15s linear infinite;
+    -moz-animation: spin 15s linear infinite;
+    animation: spin 15s linear infinite;
+}
+
+@-moz-keyframes spin {
+        100% { -moz-transform: rotate(-360deg); }
+    }
+@-webkit-keyframes spin {
+        100% { -webkit-transform: rotate(-360deg); }
+    }
+@keyframes spin {
+        100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
+    }
