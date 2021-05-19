@@ -50,7 +50,17 @@ a {
     cursor: pointer;
 }
 
-div:target { /* sur élevé l'ancre */
+h2 {
+    font-size: larger;
+    margin: 0;
+    margin-bottom: -17.5px;
+}
+
+img {
+    border-radius: 25px;
+}
+
+*:target { /* sur élevé l'ancre */
     padding-top: 7em; 
     margin-top: -7em; 
 }
@@ -157,8 +167,8 @@ nav {
     position: fixed;
     width: 15%;
     z-index: 100;
-    left: 5%;
-    top: 7.5%;
+    left: 1%;
+    top: 1%;
 }
 
 #sun {
@@ -176,3 +186,4 @@ nav {
 @keyframes spin {
         100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
     }
+    
