@@ -10,8 +10,8 @@
 }
 
 .book-section > .container {
-    height: 400px;
-    width: 500px;
+    height: 75vh;
+    width: 100vh;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -112,7 +112,7 @@
     background-color: #ffcb63;
     font-family: calibri;
     text-align: left;
-    padding: 0 30px;
+    padding: 10px;
 }
 
 .front#cover h1 {
@@ -125,5 +125,6 @@
 }
 
 .book-section > .container > .right > figure {
-    background-image: url(../img/paper.jpg);
+    background-image: url(/img/paper.jpg);
+    padding: 10px;
 }
