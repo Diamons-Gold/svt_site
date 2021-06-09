@@ -56,3 +56,8 @@ h3 {
     border-radius: 1em;
     background-color: #ef9f00;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
