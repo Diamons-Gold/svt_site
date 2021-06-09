@@ -1,120 +1,66 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SVT</title>
-        <script src="book/book.js"></script>
-        <link href="book/book.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-        <link href="img/icon.png" rel="icon">
+        <title>Warning</title>
         <meta charset="UTF-8">
+        <link href="img/warning.png" rel="icon">
+        <style>
+            html {
+                background-size: 200%;
+                background-repeat: no-repeat;
+                backface-visibility: hidden;
+                background-image: url(img/background.jpg);
+                overflow: hidden;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .warning {
+                background-color: white;
+                width: calc(80vw - 40px);
+                height: calc(80vh - 40px);
+                margin: 10vh 10vw;
+                border-radius: 50px;
+                padding: 20px;
+            }
+
+            .warning > div {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 1.5rem;
+                color: black;
+                width: 80%;
+                display: grid;
+                grid-template-columns: 50%;
+            }
+
+            #one {
+                width: auto;
+                position: static;
+
+            }
+
+            #two {
+                grid-column: 2/3;
+                position: static;
+                transform: translateY(25%);
+            }
+
+        </style>
     </head>
     <body>
-        <header id="sujet">
-            <div id="banner">
-                <p id="banner_title">SVT</p>
-                <p id="banner_text">Romain Huré<br>Clémence Legendre<br>Margaux Legrand</p>
-            </div>
-        </header>
-        <div id="navigation">
-            <a href="#sujet">Sujet</a>
-            <a href="#experience">Expérience</a>
-            <a>Conclusion</a>
-        </div>
-        <div>
-            <img src="img/sun.png" id="sun">
-        </div>
-        <section>
-            <div id="separation">
-                <div></div>
-                <div></div>
-            </div>
-            <div class="txt">
-                <h1>
-                    Groupe : Legendre Clémence, Huré Romain, Legrand Margaux
-                </h1>
-                <p>
-                    <h2> - Thème choisi : </h2></h2><br>
-                    Le cycle jour-nuit. <br><br>
-                    
-                    <h2> - Problématique envisagée : </h2><br>
-                    Comment un cadran solaire peut-il permettre de connaître l'heure ? <br><br>
-
-                    <h2> - Hypothèse : </h2><br>
-                    Lors de la période de révolution de la Terre (24 heures) le Soleil est en 
-                    mouvement dans notre ciel, l’ombre projetée par le cadran peut donc indiquer 
-                    l’heure s’il est bien positionné. <br><br>
-
-                    <h2> - Protocole : </h2><br>
-                    fabriquer un cadran solaire. <br><br>
-
-                    <h2> - Matériel : </h2><br>
-                    - Un support plat (planche de bois) <br>
-                    - Un bâton de plus ou moins 50 cm <br>
-                    - Un marqueur <br><br>
-
-                    <h2> - Fabrication : </h2><br>
-                    Placer le support sur un sol plat et placer le bâton au centre à la verticale, 
-                    venir indiquer la place de l’ombre sur la planche toutes les heures (commencer 
-                    à 7 heure). <br><br>
-                    
-                    <h2 id="experience"> - Expérience : </h2><br>
-                    On place un témoin dont l'ombre n'est pas influencer par le soleil. <br>
-                    On releve la position de l'ombre du cadran placé au soleil à heures fixes 
-                    pendant une journée on marque la position et l'heure. Puis, le deuxiéme 
-                    jour, on verifie aux mêmes heures si la position de l'ombre correspond. <br>
-                    Si c'est le cas, on peut conclure que la position du soleil dans le ciel 
-                    est semblabe a chaques jours à la même heure, ce qui permet de valider 
-                    notre hypothése. <br><br>
-
-                    <img src="img/maquette.PNG">
-                </p>
-            </div>
-            <div class="book-section">
-                <p>Illustrations by <a href="http://artisticdesigning.com" target="_blank">Nidhanshu Sharma</a></p>
-                <div class="container">
-                    <div class="right">
-                        <figure class="back" id="back-cover" style="background-image: none;"></figure>
-                        <figure class="front">
-                        </figure>
-                    </div>
-                    <div class="right">
-                        <figure class="back"></figure>
-                        <figure class="front"></figure>
-                    </div>
-                    <div class="right">
-                        <figure class="back"></figure>
-                        <figure class="front"></figure>
-                    </div>
-                    <div class="right">
-                        <figure class="back"></figure>
-                        <figure class="front"></figure>
-                    </div>
-                    <div class="right">
-                        <figure class="back"></figure>
-                        <figure class="front"></figure>
-                    </div>
-                    <div class="right">
-                        <figure class="back"></figure>
-                        <figure class="front"></figure>
-                    </div>
-                    <div class="right">
-                        <figure class="back"></figure>
-                        <figure class="front"></figure>
-                    </div>
-                    <div class="right">
-                        <figure class="back"></figure>
-                        <figure class="front" id="cover" style="background-image: none;">
-                            <h1>Book Title</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, modi.</p>
-                        </figure>
-                    </div>
+        <a href="book.html">
+            <div class="warning">
+                <div>
+                    <img src="img/warning.png" id="one">
+                    <p id="two">
+                    Cette page ne fonctionne que avec Google Chrome ! <br>
+                    Tourner les pages trop vite peu engendrer des bugs ! <br>
+                    En cas de bugs veuillez rechargé la page !
+                    </p>
                 </div>
-                <button onclick="turnLeft()">Prev</button> <button onclick="turnRight()">Next</button>
-                <br/>
             </div>
-        </section>
-        <footer>
-            footer
-        </footer>
+        </a>
     </body>
 </html>
