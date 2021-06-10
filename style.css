@@ -11,14 +11,12 @@ html {
     html  {
         overflow-y: scroll !important;
     }
-    
 }
 
 @media (max-width: 950px) {
     html  {
         overflow-x: scroll !important;
     }
-    
 }
 
 /* Banner */
